@@ -80,11 +80,11 @@ javascript: (() => {
         var ext = '';
 
         if (option.includesMemoryOnCorrect() && result.verdict == '맞았습니다!!') {
-            data.push(result.memory+' KB');
+            data.push(result.memory+'KB');
         }
 
         if (option.includesTimeOnCorrect() && result.verdict == '맞았습니다!!') {
-            data.push(result.time+' ms');
+            data.push(result.time+'ms');
         }
         
         if (option.includesExt()) {
@@ -111,10 +111,10 @@ javascript: (() => {
         button.style.color = '#fff';
         button.style.backgroundColor = '#3071a9';
         button.style.borderColor = '#285e8e';
-        button.style.padding = '5px 10px';
-        button.style.fontSize = '12px';
-        button.style.lineHeight = '1.5';
-        button.innerHTML = '생성';
+        button.style.padding = '3px 5px';
+        button.style.fontSize = '10px';
+        button.style.lineHeight = '1.0';
+        button.innerHTML = '+';
 
         return button;
     }
@@ -127,7 +127,7 @@ javascript: (() => {
             const cell = document.createElement(celltype);
     
             if (i == 0) {
-                cell.innerHTML = '파일명';
+                cell.innerHTML = '+';
             } else {
                 const button = createButtonElement();
                 button.addEventListener('click', onButtonClick);
