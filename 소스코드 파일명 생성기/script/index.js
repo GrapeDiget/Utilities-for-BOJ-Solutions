@@ -21,7 +21,7 @@ javascript: (() => {
                 type: 'checkbox',
                 name: 'includesExt',
                 label: '소스코드 확장자 포함',
-                checked: false,
+                checked: true,
             },
             {
                 type: 'checkbox',
@@ -33,7 +33,7 @@ javascript: (() => {
                 type: 'checkbox',
                 name: 'showDatetimeUsingAlert',
                 label: '제출시간 알림',
-                checked: false,
+                checked: true,
             },
         ];
     
